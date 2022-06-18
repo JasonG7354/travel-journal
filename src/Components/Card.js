@@ -11,7 +11,7 @@ export default function Card(props){
             </div>
             <div className="card--content">
             <p><FontAwesomeIcon icon={faLocationDot} className="icon--style"/><span className="icon--margin">{props.item.location} &nbsp;&nbsp;<a href={props.item.googleMapsUrl} target="_blank" rel="noopener noreferrer">View on Google Maps</a></span></p>
-            <h1>{props.item.title}</h1>
+            <h1 className="card--title">{props.item.title}</h1>
             <h6>{props.item.startDate} - {props.item.endDate}</h6>
             <p className="card--info">{props.item.description}</p>
             </div>
